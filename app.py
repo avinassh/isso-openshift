@@ -3,7 +3,7 @@
 # This portion of code is fork of gunicorn's example of running
 # custom applications.
 # Original link - http://gunicorn-docs.readthedocs.org/en/latest/custom.html
-# 2009-2015 (c) Benoît Chesneau <benoitc@e-engura.org>
+# 2009-2015 (c) Benoit Chesneau <benoitc@e-engura.org>
 # 2009-2015 (c) Paul J. Davis <paul.joseph.davis@gmail.com>
 
 import os
