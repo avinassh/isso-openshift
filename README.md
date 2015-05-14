@@ -1,14 +1,14 @@
 Isso Openshift Deployment Kit
 =============================
 
-This repo helps you installing Isso on Openshift with just one click. 
+This repo helps you installing [Isso](http://github.com/posativ/isso) on Openshift with just one click. 
 
 # Instructions
 
  - If you are using openshift web interface, pick [Python 2.7 cartridge](https://openshift.redhat.com/app/console/application_type/cart!python-2.7) and provide url of this repo in `Source Code` field. Thats all!  
  - If you are using `rhc` then run following:
 
-        rhc create-app appname python-2.7 --from-code https://github.com/avinassh/openshift-tornado-starter.git
+        rhc create-app appname python-2.7 --from-code https://github.com/avinassh/isso-openshift.git
 
 # Notes
  - Why `dbpath` in `production.cfg` is setup like that and uses relative path?
