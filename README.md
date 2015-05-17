@@ -5,10 +5,21 @@ This repo helps you installing [Isso](http://github.com/posativ/isso) on Openshi
 
 # Instructions
 
- - If you are using openshift web interface, pick [Python 2.7 cartridge](https://openshift.redhat.com/app/console/application_type/cart!python-2.7) and provide url of this repo in `Source Code` field. Thats all!  
- - If you are using `rhc` then run following:
+There are three ways to perform installation, following is the method I prefer:
+- Install `rhc`([instructions](https://developers.openshift.com/en/managing-client-tools.html)), then run following, you will get an Open Shift instance installed with Isso:
 
         rhc create-app appname python-2.7 --from-code https://github.com/avinassh/isso-openshift.git
+
+- Above step also clones Git repository of your Open Shift instance, in current directory. Make changes to the config file and push back to Openshift, it will be redeployed with new settings.
+
+### Alternative ways:
+
+ - If you are using openshift web interface, pick [Python 2.7 cartridge](https://openshift.redhat.com/app/console/application_type/cart!python-2.7) and provide url of this repo in `Source Code` field. Thats all, Isso will be installed in your Open Shift instance!  
+ - Now, from Open Shift App's main page, get it's Git address. Clone it your local machine and make changes to Isso config file. Do Git commit and push it back to Open Shift, it will be redeployed with new settings. 
+
+Another way is, [fork the current repo](https://github.com/avinassh/isso-openshift) and make changes to config file as desired. And now use either method #1 or #2. However you may end up pushing sensitive information to public repo. So, be careful. 
+
+
 
 # Notes
  - Why `dbpath` in `production.cfg` is setup like that and uses relative path?
