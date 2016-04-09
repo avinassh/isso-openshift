@@ -13,9 +13,9 @@ import multiprocessing
 import gunicorn.app.base
 from gunicorn.six import iteritems
 from isso import make_app
-from isso.core import Config
+from isso import config as isso_config
 
-application = make_app(Config.load('production.cfg'))
+application = make_app(isso_config.load('production.cfg'))
 
 virtenv = os.environ['OPENSHIFT_PYTHON_DIR'] + '/virtenv/'
 virtualenv = os.path.join(virtenv, 'bin/activate_this.py')
