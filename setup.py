@@ -6,5 +6,4 @@ setup(name='Isso OpenShift',
       author='Avinash Sajjanshetty',
       author_email='hi@avi.im',
       url='http://www.python.org/sigs/distutils-sig/',
-      install_requires=['isso', 'gunicorn', 'passlib'],
-     )
+      install_requires=['isso==0.10.3', 'gunicorn==19.4.5', 'passlib==1.6.5'],)
