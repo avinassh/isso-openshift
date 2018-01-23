@@ -1,6 +1,8 @@
 Isso Openshift Deployment Kit
 =============================
 
+*THIS PROJECT IS NO LONGER MAINTAINED ANYMORE*
+
 This repo helps you installing [Isso](http://github.com/posativ/isso) on Openshift with just one click. 
 
 # Instructions
